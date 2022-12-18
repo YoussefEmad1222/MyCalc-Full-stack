@@ -1,0 +1,76 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 10vh auto 0 auto;
+    box-shadow: 0px 0px 43px 17px rgba(153,153,153,1);
+  }
+  
+
+  .buttons {
+    display: grid;
+    border-bottom: 1px solid #999;
+    border-left: 1px solid#999;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+     justify-content: center;
+     
+  }
+  #display {
+    grid-column: 1/-1;
+    background-color: darkslategrey;
+    align-items:flex-end ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all; 
+  } 
+  .button {
+    border: 0.5px solid #999;
+    line-height: 90px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .buttons > div {
+    border-top: 1px solid #999;
+    border-right: 1px solid#999;
+  }
+  .button:hover {
+    background-color: #0a4082;
+    color: white;
+    transition: 0.5s ease-in-out;
+  }
+
+  #equal{
+    background-color: rgb(0, 72, 255);
+    color: white
+  }
+  #equal:hover {
+    background-color: #820a0a;
+    color: white;
+    transition: 0.5s ease-in-out;
+  }
+  .previous-operand {
+    color: rgb(255, 255, 255,0.75);
+  }
+  .previous-operand {
+    color: rgb(255, 255, 255,0.75);
+    font-size: 1.5rem;
+  }
+  .current-operand {
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+  }
+  

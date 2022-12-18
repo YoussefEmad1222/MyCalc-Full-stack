@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div id="display">
+          <div class="previous-operand"><output>{{operand1}}&nbsp;{{operation1}}</output></div>
+          <div class="current-operand"><output>&nbsp;{{curr_operand}}</output></div>
+        </div>
+        <app-buttons (onClickEqual)="equal()" (onClickNum)="writeNumber($event)" (onClickOperator)="operat($event)" ></app-buttons>
+      </div>
+    </section>
+  </body>
+</html>
